@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{B4E24BE9-7EE2-464C-AD7B-CC341F689348}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Launcher</RootNamespace>
+    <AssemblyName>INFINITE</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationIcon>INFINITE.ico</ApplicationIcon>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SciChart.Wpf.UI.Transitionz" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="0A0E460F.cs" />
+    <Compile Include="0A5E21E5.cs" />
+    <Compile Include="11D71D7F.cs" />
+    <Compile Include="24097289.cs" />
+    <Compile Include="31621ED3.cs" />
+    <Compile Include="3CCA29CB.cs" />
+    <Compile Include="46A368BD.cs" />
+    <Compile Include="4A5F62AC.cs" />
+    <Compile Include="4C123EDF.cs" />
+    <Compile Include="65674023.cs" />
+    <Compile Include="6C9724F2.cs" />
+    <Compile Include="736B36D7.cs" />
+    <Compile Include="74AF4C7F.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApplyBindingDefinition.cs" />
+    <Compile Include="AssemblyResolver.cs" />
+    <Compile Include="BindingDefinition.cs" />
+    <Compile Include="BOOL.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\ActionExecutionStrategy.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\Behavior.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\BehaviorBinding.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\BehaviorBindingCollection.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\CommandBehavior.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\CommandBehaviorBinding.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\CommandBehaviorCollection.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\CommandExecutionStrategy.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\DelegateCommand.2.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\DelegateCommand.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\EventArgsHandler.2.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\EventArgsHandler.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\EventHandlerGenerator.cs" />
+    <Compile Include="Common\AttachedCommandBehavior\IExecutionStrategy.cs" />
+    <Compile Include="Common\Components\PagesHost.cs" />
+    <Compile Include="Components\PageContainer.xaml.cs">
+      <DependentUpon>PageContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Components\RegionControl.xaml.cs">
+      <DependentUpon>RegionControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Converters\EnumConverter.cs" />
+    <Compile Include="Converters\InverseBooleanConverter.cs" />
+    <Compile Include="CustomControls\AdornedControl\AdornedControl.cs" />
+    <Compile Include="CustomControls\AdornedControl\AdornerPlacement.cs" />
+    <Compile Include="CustomControls\AdornedControl\FrameworkElementAdorner.cs" />
+    <Compile Include="CustomControls\AlertBar\AlertBar.cs" />
+    <Compile Include="CustomControls\AlertBar\AlertWindow.xaml.cs">
+      <DependentUpon>AlertWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\CircularProgressBar\AngleToIsLargeConverter.cs" />
+    <Compile Include="CustomControls\CircularProgressBar\AngleToPointConverter.cs" />
+    <Compile Include="CustomControls\CircularProgressBar\CircularProgressBar.cs" />
+    <Compile Include="CustomControls\CircularProgressBar\InnerRadiusConverter.cs" />
+    <Compile Include="CustomControls\CircularProgressBar\RadiusToCenterConverter.cs" />
+    <Compile Include="CustomControls\CircularProgressBar\RadiusToDiameter.cs" />
+    <Compile Include="CustomControls\CircularProgressBar\RadiusToSizeConverter.cs" />
+    <Compile Include="CustomControls\CircularProgressBar\StrokeLineCapConverter.cs" />
+    <Compile Include="CustomControls\CircularProgressBar\StrokeMode.cs" />
+    <Compile Include="CustomControls\CircularProgressBar\StrokeToStartPointConverter.cs" />
+    <Compile Include="CustomControls\Dialog\CustomMessageBox.cs" />
+    <Compile Include="CustomControls\Dialog\CustomMessageBoxWindow.xaml.cs">
+      <DependentUpon>CustomMessageBoxWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\LoadingIndicators\IndicatorVisualStateGroupNames.cs" />
+    <Compile Include="CustomControls\LoadingIndicators\IndicatorVisualStateNames.cs" />
+    <Compile Include="CustomControls\LoadingIndicators\LoadingIndicator.cs" />
+    <Compile Include="CustomControls\LoadingIndicators\LoadingIndicatorMode.cs" />
+    <Compile Include="CustomControls\LoadingIndicators\LoadingIndicatorModeUtility.cs" />
+    <Compile Include="CustomControls\LoadingIndicators\Styles\MultiStyleExtension.cs" />
+    <Compile Include="CustomControls\LoadingIndicators\Styles\StyleExtensions.cs" />
+    <Compile Include="CustomControls\LoadingIndicators\Utilities\VisualStateUtilities.cs" />
+    <Compile Include="CustomControls\NonTopmostPopup.cs" />
+    <Compile Include="Dependencies\API\Privilege.cs" />
+    <Compile Include="Dependencies\API\WinAPI.cs" />
+    <Compile Include="Dependencies\appMutex.cs" />
+    <Compile Include="Dependencies\CommonNote.cs" />
+    <Compile Include="Dependencies\crypt.cs" />
+    <Compile Include="Dependencies\ExceptionHelpers.cs" />
+    <Compile Include="Dependencies\HiPerfTimer.cs" />
+    <Compile Include="Dependencies\Notes.cs" />
+    <Compile Include="Dependencies\util.cs" />
+    <Compile Include="Dependencies\util_data.cs" />
+    <Compile Include="Dependencies\versionHelper.cs" />
+    <Compile Include="Dependencies\WinVer.cs" />
+    <Compile Include="Dependencies\_WinVer.cs" />
+    <Compile Include="DictionaryExtensions.cs" />
+    <Compile Include="DispatchService.cs" />
+    <Compile Include="DisplayAgents\MainWindowRegionManager.cs" />
+    <Compile Include="eHashes.cs" />
+    <Compile Include="eHashesType.cs" />
+    <Compile Include="eKeyStates.cs" />
+    <Compile Include="eLanguage.cs" />
+    <Compile Include="eStatusServiceType.cs" />
+    <Compile Include="eVm.cs" />
+    <Compile Include="ExceptionExt.cs" />
+    <Compile Include="FrameworkElementExt.cs" />
+    <Compile Include="Framework\FileLogger.cs" />
+    <Compile Include="Framework\Protect.cs" />
+    <Compile Include="Framework\UiDispatcher.cs" />
+    <Compile Include="INFMutex.cs" />
+    <Compile Include="Internal\Data\szData.cs" />
+    <Compile Include="JavaScriptSerializerExtensions.cs" />
+    <Compile Include="Language\CLanguage.cs" />
+    <Compile Include="Language\Resources\en_US.cs" />
+    <Compile Include="Language\Resources\ru_RU.cs" />
+    <Compile Include="Language\Resources\Texts.cs" />
+    <Compile Include="LocalizationExtension.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="nf_server.cs" />
+    <Compile Include="Presentation\IDisplayMainWindowPages.cs" />
+    <Compile Include="Presentation\Interfaces\ILogger.cs" />
+    <Compile Include="Presentation\Interfaces\IMainWindowRegionManager.cs" />
+    <Compile Include="Presentation\Interfaces\IUiDispatcher.cs" />
+    <Compile Include="Presentation\MainWindow\MenuBarViewModel.cs" />
+    <Compile Include="Presentation\MainWindow\ProductBarViewModel.cs" />
+    <Compile Include="Presentation\SimpleCommand.2.cs" />
+    <Compile Include="Presentation\SimpleCommand.cs" />
+    <Compile Include="Presentation\ViewModelBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="StyleTriggersInheritanceHelper.cs" />
+    <Compile Include="tools.cs" />
+    <Compile Include="TranslationSource.cs" />
+    <Compile Include="UserControls\AboutControl.cs" />
+    <Compile Include="UserControls\ButtonExtensions.cs" />
+    <Compile Include="UserControls\HelpControl.cs" />
+    <Compile Include="UserControls\LoadingWait.xaml.cs">
+      <DependentUpon>LoadingWait.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MenuBarControl.xaml.cs">
+      <DependentUpon>MenuBarControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewsBarControl.xaml.cs">
+      <DependentUpon>NewsBarControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductUserControl.xaml.cs">
+      <DependentUpon>ProductUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="vars.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Language\Resources\en-US.resources" />
+    <EmbeddedResource Include="Language\Resources\ru-RU.resources" />
+    <EmbeddedResource Include="Language\Resources\Texts.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Components\PageContainer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Components\RegionControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\AlertBar\AlertWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\CircularProgressBar\styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\Dialog\CustomMessageBoxWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\LoadingIndicators\colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\LoadingIndicators\Styles\loadingarcs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\LoadingIndicators\Styles\loadingarcsring.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\LoadingIndicators\Styles\loadingdoublebounce.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\LoadingIndicators\Styles\loadingflipplane.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\LoadingIndicators\Styles\loadingpulse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\LoadingIndicators\Styles\loadingring.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\LoadingIndicators\Styles\loadingthreedots.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\LoadingIndicators\Styles\loadingwave.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="customcontrols\loadingindicators\themes\generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\scrollview\colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\scrollview\horizontalscrollbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\scrollview\scrollbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\scrollview\scrollbarbottombutton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\scrollview\scrollbarlinebutton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\scrollview\scrollbarpagebutton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\scrollview\scrollbarrightbutton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\scrollview\scrollbarthumb.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\scrollview\scrollstyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="styles\scrollview\verticalscrollbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\aboutusercontrol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\helpusercontrol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LoadingWait.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\MenuBarControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\NewsBarControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ProductUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="views\mainwindow\mainwindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\apexlegends\apex-legends.jpg" />
+    <Resource Include="images\apexlegends\apex-legends_over2.jpg" />
+    <Resource Include="images\assets\click.png" />
+    <Resource Include="images\assets\copy.png" />
+    <Resource Include="images\assets\copy_over.png" />
+    <Resource Include="images\assets\delete_64px.png" />
+    <Resource Include="images\assets\delete_96px.png" />
+    <Resource Include="images\assets\down-arrow.png" />
+    <Resource Include="images\assets\down-arrow_over.png" />
+    <Resource Include="images\assets\external_link_24px.png" />
+    <Resource Include="images\assets\key_4.png" />
+    <Resource Include="images\assets\key_left.png" />
+    <Resource Include="images\assets\left-arrow.png" />
+    <Resource Include="images\assets\menu_120px.png" />
+    <Resource Include="images\assets\minus_96px.png" />
+    <Resource Include="images\assets\note.png" />
+    <Resource Include="images\assets\note2.png" />
+    <Resource Include="images\assets\note3.png" />
+    <Resource Include="images\assets\question.png" />
+    <Resource Include="images\assets\question1.png" />
+    <Resource Include="images\assets\success_alert.png" />
+    <Resource Include="images\codmw\logo2.jpg" />
+    <Resource Include="images\codmw\logo_over.jpg" />
+    <Resource Include="images\warface\gameicon.png" />
+    <Resource Include="images\warface\gameicon_over.jpg" />
+    <Resource Include="ioinf_blue2.ico" />
+    <Resource Include="Styles\style.xaml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
